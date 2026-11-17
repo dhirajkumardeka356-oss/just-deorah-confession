@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090909"><title>Admin · Deorah Confession</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell admin-shell">
+    <header class="brand"><h1>Deorah <span>Confession</span></h1><p>Private administration</p></header>
+    <section class="panel" id="login-panel">
+      <h2>Admin sign in</h2>
+      <form id="login-form">
+        <label>Email</label><input id="email" type="email" autocomplete="username" required>
+        <label>Password</label><input id="password" type="password" autocomplete="current-password" required>
+        <button type="submit">Sign in</button><p id="login-message" role="status"></p>
+      </form>
+    </section>
+    <section id="dashboard" hidden>
+      <div class="dash-head"><div><h2>Private inbox</h2><p class="muted">Only authorized admins can view these submissions.</p></div><button class="secondary" id="logout">Sign out</button></div>
+      <div id="inbox"></div>
+    </section>
+  </main>
+  <script type="module" src="admin.js"></script>
+</body></html>

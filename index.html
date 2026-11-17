@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090909"><title>Deorah Confession</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="brand"><h1>Deorah <span>Confession</span></h1><p>A private space to share what’s on your mind.</p></header>
+    <section class="panel">
+      <h2>Submit a confession</h2>
+      <p class="muted">Your submission goes privately to the admin. It will not appear publicly.</p>
+      <form id="confession-form">
+        <label for="confession">Your confession</label>
+        <textarea id="confession" maxlength="2000" minlength="5" required placeholder="Write your confession here…"></textarea>
+        <div class="form-foot"><small id="count">0 / 2000</small><button type="submit">Send privately</button></div>
+        <p id="message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+    <footer>DEORAH CONFESSION · Respect privacy. Be kind.</footer>
+  </main>
+  <script type="module" src="app.js"></script>
+</body></html>
